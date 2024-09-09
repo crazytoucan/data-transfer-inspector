@@ -122,8 +122,6 @@ function InputArea() {
     []
   );
 
-  console.log("render", dataTransfer);
-
   return (
     <>
       <Heading size="2" mb="1">
