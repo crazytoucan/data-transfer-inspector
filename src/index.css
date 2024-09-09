@@ -13,6 +13,11 @@
 
   font-weight: 600;
   color: var(--gray-12) !important;
+  white-space: pre-wrap;
+}
+
+.mime-value {
+  white-space: pre-wrap;
 }
 
 .inputarea.-window-dragging {

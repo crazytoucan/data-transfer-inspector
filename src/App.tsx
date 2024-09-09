@@ -74,7 +74,7 @@ function DataTransferView({ dt }: { dt: SerializedDataTransfer | null }) {
           <DataList.Item key={index}>
             <DataList.Label className="mime-label">{item.type}</DataList.Label>
             <DataList.Value>
-              <Code>
+              <Code className="mime-value">
                 {item.kind === "file"
                   ? `<File ${item.fileValue?.name ?? ""}>`
                   : item.stringValue}
