@@ -14,3 +14,12 @@
   font-weight: 600;
   color: var(--gray-12) !important;
 }
+
+.inputarea.-window-dragging {
+  outline: 2px var(--accent-7) !important;
+  outline-style: dashed !important;
+}
+
+.inputarea.-drag-enter input {
+  background: var(--accent-5);
+}
