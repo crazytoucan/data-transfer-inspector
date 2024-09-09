@@ -1,5 +1,6 @@
 import {
   Box,
+  Callout,
   Code,
   DataList,
   Heading,
@@ -151,6 +152,7 @@ function InputArea() {
           setIsDragEnter(false);
         }}
         onDrop={async (evt) => {
+          evt.preventDefault();
           setIsDragEnter(false);
           try {
             setDataTransfer(await serializeDataTransfer(evt.dataTransfer));
@@ -182,12 +184,18 @@ export function App() {
           <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer">
             [mdn]
           </a>{" "}
-          MIME types associated with paste and drag-and-drop events.
+          MIME types associated with paste and drag-and-drop events. To use this
+          tool, simply paste or drop a payload into the box below. All
+          clientside, no network requests ever.
         </p>
-        <p>
-          To use this tool, simply paste or drop a payload into the box below.
-          All clientside, no network requests ever.
-        </p>
+        <Callout.Root mb="3">
+          <Callout.Icon>💡</Callout.Icon>
+          <Callout.Text>
+            Not sure why this is interesting? Try <strong>pasting</strong> text
+            from VSCode or <strong>dragging</strong> a few songs from a Spotify
+            playlist!
+          </Callout.Text>
+        </Callout.Root>
         <InputArea />
       </Box>
     </Box>
