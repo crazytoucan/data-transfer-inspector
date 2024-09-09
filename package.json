@@ -1,5 +1,5 @@
 {
-  "name": "mime-inspector",
+  "name": "datatransfer-inspector",
   "private": true,
   "scripts": {
     "dev": "vite",
