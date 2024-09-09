@@ -5,3 +5,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.mime-label {
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono",
+    "Droid Sans Mono", "Consolas", "Courier New", monospace;
+
+  font-weight: 600;
+  color: var(--gray-12) !important;
+}

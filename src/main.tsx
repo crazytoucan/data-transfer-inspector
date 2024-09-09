@@ -10,7 +10,7 @@ import "modern-normalize/modern-normalize.css";
 const root = createRoot(document.getElementById("root")!);
 root.render(
   <StrictMode>
-    <Theme accentColor="indigo">
+    <Theme accentColor="indigo" hasBackground={false}>
       <App />
     </Theme>
   </StrictMode>
